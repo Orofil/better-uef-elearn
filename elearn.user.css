@@ -2,9 +2,55 @@
 @name           Better UEF eLearn
 @version        2023.08311
 @author         Orofil
+
+@var checkbox   dark-mode   'Dark mode' 0
+
+@var select     main-hue    'Select color hue rotation' {
+    'Red						': '160deg',
+    'Scarlet					': '170deg',
+    'International Orange		': '180deg',
+    'Dark Orange				': '190deg',
+    'Orange						': '200deg',
+    'Gold						': '210deg',
+    'Yellow						': '220deg',
+    'Electric Lime				': '230deg',
+    'Spring Bud					': '240deg',
+    'Chartreuse					': '250deg',
+    'Bright Green				': '260deg',
+    'Harlequin					': '270deg',
+    'Lime						': '280deg',
+    'Free Speech Green			': '290deg',
+    'Malachite					': '300deg',
+    'Spring Green				': '310deg',
+    'Medium Spring Green		': '320deg',
+    'Bright Turquoise			': '330deg',
+    'Aqua						': '340deg',
+    'Deep Sky Blue				': '350deg',
+    'Dodger Blue				*': '0deg',
+    'Navy Blue					': '10deg',
+    'Light Blue					': '20deg',
+    'Blue						': '30deg',
+    'Dark Blue					': '40deg',
+    'Grey purple				': '50deg',
+    'Electric Indigo			': '60deg',
+    'Indigo						': '70deg',
+    'Electric Purple			': '80deg',
+    'Psychedelic Purple			': '90deg',
+    'Fuchsia					': '100deg',
+    'Hot Magenta				': '110deg',
+    'Hollywood Cerise			': '120deg',
+    'Deep Pink					': '130deg',
+    'Razzmatazz					': '140deg',
+    'Torch Red					': '150deg',
+}
 ==/UserStyle== */
 
 @-moz-document domain("elearn.uef.fi") {
+    :root {
+        --base-hue: main-hue;
+        --base-hue-deg: main-hue;
+    }
+    
     .navbar.fixed-top {
         box-shadow: 0 0 6px rgba(0,0,0,.03),0 2px 6px rgba(0,0,0,.09);
     }
