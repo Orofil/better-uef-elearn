@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name           Better UEF eLearn
+@version        2023.08311
+@author         Orofil
+==/UserStyle== */
+
+@-moz-document domain("elearn.uef.fi") {
+    .navbar.fixed-top {
+        box-shadow: 0 0 6px rgba(0,0,0,.03),0 2px 6px rgba(0,0,0,.09);
+    }
+    
+    .drawer-right {
+        background-color: #ddd;
+    }
+    
+    .drawer-right .drawerheader .btn.drawertoggle {
+        color: #000;
+    }
+    
+    .drawer .courseindex .courseindex-item-content .courseindex-link, .drawer .courseindex .courseindex-item .fa-circle-thin {
+        color: #b3b3b3;
+    }
+    
+    .courseindex-item-content {
+        font-size: 0.8rem;
+    }
+    
+    .courseindex .courseindex-section .courseindex-sectioncontent .courseindex-item {
+        padding: 0.3rem;
+    }
+    
+    .bg-success {
+        background-color: #5BC0D7 !important;
+    }
+    
+    .btn-success {
+        background-color: #268ca4;
+        border-color: #1b6b7d;
+    }
+    
+    .courseindex .courseindex-item .completioninfo.completion_complete {
+        color: #348A9D;
+    }
+    
+    .drawercontent {
+        scrollbar-color: #999 #323232;
+    }
+}
+    
+@-moz-document url-prefix("https://elearn.uef.fi/mod/quiz/") {
+    #page-header {
+        padding-bottom: 10px;
+    }
+}
