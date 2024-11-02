@@ -2,7 +2,7 @@
 @name           Better UEF eLearn
 @namespace      https://github.com/Orofil/better-uef-elearn
 @author         Orofil
-@version        2023.09111
+@version        2024.11021
 ==/UserStyle== */
 
 @-moz-document domain("elearn.uef.fi") {
@@ -46,10 +46,25 @@
     .drawercontent {
         scrollbar-color: #999 #323232;
     }
-}
     
-@-moz-document url-prefix("https://elearn.uef.fi/mod/quiz/") {
-    #page-header {
-        padding-bottom: 10px;
+    .hidden {
+        color: lightgray;
     }
-}
+    
+    .hidden .badge-secondary {
+        background-color: rgb(8,156,182);
+    }
+    }
+    
+    @-moz-document url-prefix("https://elearn.uef.fi/mod/quiz/") {
+    #page-header {
+            padding-bottom: 10px;
+        }
+    }
+    
+    @-moz-document url-prefix("https://elearn.uef.fi/login/") {
+    element {
+        background: rgb(2,0,36);
+        background-image: linear-gradient(341deg, rgba(2,0,36,1) 0%, rgba(5,90,121,1) 45%, rgba(8,156,182,1) 100%); 
+    }
+    }
